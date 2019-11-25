@@ -1,4 +1,3 @@
-// $("#currentDay").text(moment().format('MMMM Do YYYY, h:mma'));
 var userInput = $("#input1");
 var userInputTwo = $("#input2");
 var userInputThree = $("#input3");
@@ -118,6 +117,6 @@ if (moment().format("H") > 17) {
 } else if (moment().format("H") === 17) {
   $("#input9").addClass("present")
 }
-//hint
+
 
 
