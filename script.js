@@ -47,12 +47,13 @@ $("#input7").text(schedule7);
 $("#input8").text(schedule8);
 $("#input9").text(schedule9);
 
+setInterval(function(){ 
 
 if (moment().format("H") > 9) {
   $("#input1").addClass("past");
 } else if (moment().format("H") < 9) {
   $("#input1").addClass("future");
-} else if (moment().format("H") === 9) {
+} else if (moment().format("H") == 9) {
   $("#input1").addClass("present")
 }
 
@@ -60,7 +61,7 @@ if (moment().format("H") > 10) {
   $("#input2").addClass("past");
 } else if (moment().format("H") < 10) {
   $("#input2").addClass("future");
-} else if (moment().format("H") === 10) {
+} else if (moment().format("H") == 10) {
   $("#input2").addClass("present")
 }
 
@@ -68,7 +69,7 @@ if (moment().format("H") > 11) {
   $("#input3").addClass("past");
 } else if (moment().format("H") < 11) {
   $("#input3").addClass("future");
-} else if (moment().format("H") === 11) {
+} else if (moment().format("H") == 11) {
   $("#input3").addClass("present")
 }
 
@@ -76,7 +77,7 @@ if (moment().format("H") > 12) {
   $("#input4").addClass("past");
 } else if (moment().format("H") < 12) {
   $("#input4").addClass("future");
-} else if (moment().format("H") === 12) {
+} else if (moment().format("H") == 12) {
   $("#input4").addClass("present")
 }
 
@@ -84,7 +85,7 @@ if (moment().format("H") > 13) {
   $("#input5").addClass("past");
 } else if (moment().format("H") < 13) {
   $("#input5").addClass("future");
-} else if (moment().format("H") === 13) {
+} else if (moment().format("H") == 13) {
   $("#input5").addClass("present")
 }
 
@@ -92,7 +93,7 @@ if (moment().format("H") > 14) {
   $("#input6").addClass("past");
 } else if (moment().format("H") < 14) {
   $("#input6").addClass("future");
-} else if (moment().format("H") === 14) {
+} else if (moment().format("H") == 14) {
   $("#input6").addClass("present")
 }
 
@@ -100,23 +101,23 @@ if (moment().format("H") > 15) {
   $("#input7").addClass("past");
 } else if (moment().format("H") < 15) {
   $("#input7").addClass("future");
-} else if (moment().format("H") === 15) {
+} else if (moment().format("H") == 15) {
   $("#input7").addClass("present")
 }
 if (moment().format("H") > 16) {
   $("#input8").addClass("past");
 } else if (moment().format("H") < 16) {
   $("#input8").addClass("future");
-} else if (moment().format("H") === 16) {
+} else if (moment().format("H") == 16) {
   $("#input8").addClass("present")
 }
 if (moment().format("H") > 17) {
   $("#input9").addClass("past");
 } else if (moment().format("H") < 17) {
   $("#input9").addClass("future");
-} else if (moment().format("H") === 17) {
+} else if (moment().format("H") == 17) {
   $("#input9").addClass("present")
 }
 
-
+}, 1000);
 
